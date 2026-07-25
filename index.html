@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Appvilla - Creative Landing Page HTML Template.</title>
-    <meta name="description" content="" />
+    <title>Gratitude Journal — One Day. One Thought.</title>
+    <meta name="description" content="A hyper-minimalist daily gratitude journal limited to 150 characters per day with a strict midnight lockout." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
 
@@ -17,17 +17,118 @@
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
 
+    <!-- ========================= Custom Dark Sanctuary Overrides ========================= -->
+    <style>
+        :root {
+            --bg-pitch-black: #000000;
+            --surface-charcoal: #1C1C1E;
+            --text-white: #FFFFFF;
+            --accent-warm-linen: #EAE3D2;
+            --accent-muted-olive: #7B886F;
+        }
+
+        body {
+            background-color: var(--bg-pitch-black) !important;
+            color: var(--text-white) !important;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .header, .navbar, .hero-area, .features, .our-achievement, .pricing-table, .call-action, .footer {
+            background-color: var(--bg-pitch-black) !important;
+        }
+
+        h1, h2, h3, h4, h5, h6, .navbar-brand {
+            color: var(--text-white) !important;
+        }
+
+        .btn-linen {
+            background-color: var(--accent-warm-linen) !important;
+            color: #000000 !important;
+            border-radius: 30px !important;
+            font-weight: 600 !important;
+            border: none !important;
+            padding: 12px 28px !important;
+            transition: all 0.3s ease;
+        }
+
+        .btn-linen:hover {
+            background-color: #d8cfbc !important;
+            color: #000000 !important;
+        }
+
+        .btn-outline-linen {
+            border: 1px solid var(--accent-warm-linen) !important;
+            color: var(--accent-warm-linen) !important;
+            border-radius: 30px !important;
+            background: transparent !important;
+            padding: 12px 28px !important;
+        }
+
+        .btn-outline-linen:hover {
+            background-color: var(--accent-warm-linen) !important;
+            color: #000000 !important;
+        }
+
+        .single-feature, .single-table, .cta-content {
+            background-color: var(--surface-charcoal) !important;
+            border-radius: 20px !important;
+            border: 1px solid rgba(234, 227, 210, 0.1) !important;
+        }
+
+        .single-feature i {
+            color: var(--accent-warm-linen) !important;
+        }
+
+        .single-feature h3 {
+            color: var(--text-white) !important;
+        }
+
+        .single-feature p {
+            color: #A1A1A6 !important;
+        }
+
+        .badge-best-value {
+            background-color: var(--accent-muted-olive);
+            color: #FFFFFF;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .pricing-table .single-table .amount {
+            color: var(--accent-warm-linen) !important;
+        }
+
+        .text-olive {
+            color: var(--accent-muted-olive) !important;
+        }
+
+        .text-linen {
+            color: var(--accent-warm-linen) !important;
+        }
+
+        .section-title h2 {
+            color: var(--text-white) !important;
+        }
+
+        .section-title p {
+            color: #8E8E93 !important;
+        }
+
+        .footer-top {
+            border-top: 1px solid var(--surface-charcoal);
+        }
+
+        .preloader {
+            background-color: var(--bg-pitch-black) !important;
+        }
+    </style>
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
     <!-- Preloader -->
     <div class="preloader">
         <div class="preloader-inner">
@@ -47,8 +148,8 @@
                     <div class="nav-inner">
                         <!-- Start Navbar -->
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo/white-logo.svg" alt="Logo">
+                            <a class="navbar-brand text-linen fw-bold fs-4" href="index.html">
+                                Gratitude Journal
                             </a>
                             <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -60,71 +161,50 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a href="#home" class="page-scroll active"
-                                            aria-label="Toggle navigation">Home</a>
+                                        <a href="#home" class="page-scroll active">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#features" class="page-scroll"
-                                            aria-label="Toggle navigation">Features</a>
+                                        <a href="#paradigm" class="page-scroll">The Paradigm</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="javascript:void(0)" aria-label="Toggle navigation">Overview</a>
+                                        <a href="#features" class="page-scroll">Features</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#pricing" class="page-scroll"
-                                            aria-label="Toggle navigation">Pricing</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="javascript:void(0)" aria-label="Toggle navigation">Team</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
-                                            data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent"
-                                            aria-expanded="false" aria-label="Toggle navigation">Blog</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-4">
-                                            <li class="nav-item"><a href="javascript:void(0)">Blog Grid Sidebar</a>
-                                            </li>
-                                            <li class="nav-item"><a href="javascript:void(0)">Blog Single</a></li>
-                                            <li class="nav-item"><a href="javascript:void(0)">Blog Single
-                                                    Sibebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="javascript:void(0)" aria-label="Toggle navigation">Contact</a>
+                                        <a href="#pricing" class="page-scroll">Pricing</a>
                                     </li>
                                 </ul>
-                            </div> <!-- navbar collapse -->
+                            </div>
                             <div class="button add-list-button">
-                                <a href="javascript:void(0)" class="btn">Get it now</a>
+                                <a href="#pricing" class="btn btn-linen">Start Free Trial</a>
                             </div>
                         </nav>
                         <!-- End Navbar -->
                     </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+        </div>
     </header>
     <!-- End Header Area -->
 
     <!-- Start Hero Area -->
-    <section id="home" class="hero-area">
+    <section id="home" class="hero-area pt-5 pb-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5 col-md-12 col-12">
+                <div class="col-lg-6 col-md-12 col-12">
                     <div class="hero-content">
-                        <h1 class="wow fadeInLeft" data-wow-delay=".4s">A powerful app for your business.</h1>
-                        <p class="wow fadeInLeft" data-wow-delay=".6s">From open source to pro services, Piqes helps you
-                            to build, deploy, test, and monitor apps.</p>
-                        <div class="button wow fadeInLeft" data-wow-delay=".8s">
-                            <a href="javascript:void(0)" class="btn"><i class="lni lni-apple"></i> App Store</a>
-                            <a href="javascript:void(0)" class="btn btn-alt"><i class="lni lni-play-store"></i> Google
-                                Play</a>
+                        <span class="text-olive fw-bold text-uppercase tracking-wide mb-2 d-inline-block">The Radical Minimalism Framework</span>
+                        <h1 class="wow fadeInLeft display-4 fw-bold" data-wow-delay=".4s">One day.<br>One thought.</h1>
+                        <p class="wow fadeInLeft mt-3 text-secondary lead" data-wow-delay=".6s">
+                            Science proves that scanning for small daily wins rewires your brain. We give you exactly <strong>150 characters a day</strong> to capture your gratitude before midnight.
+                        </p>
+                        <div class="button wow fadeInLeft mt-4 d-flex gap-3" data-wow-delay=".8s">
+                            <a href="#pricing" class="btn btn-linen"><i class="lni lni-apple me-2"></i> iOS App Store</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-12 col-12">
+                <div class="col-lg-6 col-md-12 col-12 text-center">
                     <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
-                        <img src="assets/images/hero/phone.png" alt="#">
+                        <img src="assets/images/hero/phone.png" alt="Gratitude Journal iOS App Interface" class="img-fluid style-hero-img" style="max-height: 580px;">
                     </div>
                 </div>
             </div>
@@ -132,280 +212,188 @@
     </section>
     <!-- End Hero Area -->
 
-    <!-- Start Features Area -->
-    <section id="features" class="features section">
+    <!-- Start Paradigm Section -->
+    <section id="paradigm" class="section py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s">Features</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Your Experience Gets Better And Better Over Time.
-                        </h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered alteration in some form.</p>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="section-title mb-5">
+                        <h3 class="text-olive wow zoomIn" data-wow-delay=".2s">Rules of Engagement</h3>
+                        <h2 class="wow fadeInUp mt-2" data-wow-delay=".4s">The Midnight Lockout Engine</h2>
+                        <p class="wow fadeInUp mt-3" data-wow-delay=".6s">
+                            Just like writing with pen and paper inside a physical notebook—once the calendar day closes, there’s no changing it. No backfilling past days. Consistency is your only currency.
+                        </p>
                     </div>
                 </div>
             </div>
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4" style="background-color: var(--surface-charcoal);">
+                        <i class="lni lni-pencil-alt fs-1 text-linen mb-3"></i>
+                        <h4 class="text-white">150 Characters</h4>
+                        <p class="text-secondary mt-2">Zero blank-page anxiety. Distill your daily gratitude down to its purest essence in under 30 seconds.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4" style="background-color: var(--surface-charcoal);">
+                        <i class="lni lni-alarm-clock fs-1 text-linen mb-3"></i>
+                        <h4 class="text-white">9:00 PM Gentle Nudge</h4>
+                        <p class="text-secondary mt-2">A discreet daily push reminder helps you decompress before bed and keep your active streak alive.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4" style="background-color: var(--surface-charcoal);">
+                        <i class="lni lni-lock fs-1 text-linen mb-3"></i>
+                        <h4 class="text-white">12:00 AM Midnight Seal</h4>
+                        <p class="text-secondary mt-2">When local midnight strikes, today's entry locks permanently into read-only reflection mode.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Paradigm Section -->
+
+    <!-- Start Features Area -->
+    <section id="features" class="features section py-5">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
-                        <i class="lni lni-cloud-upload"></i>
-                        <h3>Push to Deploy</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page at its layout.</p>
+                <div class="col-12 text-center">
+                    <div class="section-title mb-5">
+                        <h3 class="text-olive wow zoomIn" data-wow-delay=".2s">Thoughtful Architecture</h3>
+                        <h2 class="wow fadeInUp mt-2" data-wow-delay=".4s">Designed for Mindful Rituals</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Built exclusively for iOS in high-contrast native dark mode for night-time clarity.</p>
                     </div>
-                    <!-- End Single Feature -->
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-feature p-4 wow fadeInUp" data-wow-delay=".2s">
+                        <i class="lni lni-target text-linen fs-2 mb-3 d-block"></i>
+                        <h3>7-Ring Weekly Tracker</h3>
+                        <p>Track your weekly momentum at a glance with Strava-inspired rings that fill upon daily submission.</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
-                        <i class="lni lni-lock"></i>
-                        <h3>SSL Certificates</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page at its layout.</p>
+                    <div class="single-feature p-4 wow fadeInUp" data-wow-delay=".4s">
+                        <i class="lni lni-grid-alt text-linen fs-2 mb-3 d-block"></i>
+                        <h3>Month & Year Heatmaps</h3>
+                        <p>Switch seamlessly between monthly calendar grids and full-year micro-cluster heatmaps to visualize your consistency.</p>
                     </div>
-                    <!-- End Single Feature -->
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-                        <i class="lni lni-reload"></i>
-                        <h3>Simple Queues</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page at its layout.</p>
+                    <div class="single-feature p-4 wow fadeInUp" data-wow-delay=".6s">
+                        <i class="lni lni-search text-linen fs-2 mb-3 d-block"></i>
+                        <h3>Instant Text Search</h3>
+                        <p>Effortlessly look up past memories with keyword queries across your entire encrypted historical database.</p>
                     </div>
-                    <!-- End Single Feature -->
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
-                        <i class="lni lni-shield"></i>
-                        <h3>Advanced Security</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page at its layout.</p>
+                    <div class="single-feature p-4 wow fadeInUp" data-wow-delay=".2s">
+                        <i class="lni lni-shield text-linen fs-2 mb-3 d-block"></i>
+                        <h3>Encrypted Cloud Sync</h3>
+                        <p>Sign in with Apple or Google in one tap. Entries sync instantly and securely across all your iOS devices.</p>
                     </div>
-                    <!-- End Single Feature -->
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
-                        <i class="lni lni-cog"></i>
-                        <h3>Powerful API</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page at its layout.</p>
+                    <div class="single-feature p-4 wow fadeInUp" data-wow-delay=".4s">
+                        <i class="lni lni-timer text-linen fs-2 mb-3 d-block"></i>
+                        <h3>Custom Reminders</h3>
+                        <p>Tailor your notification timing inside Settings to seamlessly align with your specific evening wind-down schedule.</p>
                     </div>
-                    <!-- End Single Feature -->
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-                        <i class="lni lni-layers"></i>
-                        <h3>Database Backups</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page at its layout.</p>
+                    <div class="single-feature p-4 wow fadeInUp" data-wow-delay=".6s">
+                        <i class="lni lni-sun text-linen fs-2 mb-3 d-block"></i>
+                        <h3>Midnight Sanctuary Theme</h3>
+                        <p>Exclusively pitch black with warm linen accents—crafted to reduce cognitive load and avoid eye strain before sleep.</p>
                     </div>
-                    <!-- End Single Feature -->
                 </div>
             </div>
         </div>
     </section>
     <!-- End Features Area -->
 
-    <!-- Start Achievement Area -->
-    <section class="our-achievement section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
-                    <div class="title">
-                        <h2>Trusted by developers from over 80 planets</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                                <h3 class="counter"><span id="secondo1" class="countup" cup-end="100">100</span>%</h3>
-                                <p>satisfaction</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
-                                <h3 class="counter"><span id="secondo2" class="countup" cup-end="120">120</span>K</h3>
-                                <p>Happy Users</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-                                <h3 class="counter"><span id="secondo3" class="countup" cup-end="125">125</span>k+</h3>
-                                <p>Downloads</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Achievement Area -->
-
     <!-- Start Pricing Table Area -->
-    <section id="pricing" class="pricing-table section">
+    <section id="pricing" class="pricing-table section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s">pricing</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Pricing Plan</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                <div class="col-12 text-center">
+                    <div class="section-title mb-5">
+                        <h3 class="text-olive wow zoomIn" data-wow-delay=".2s">Simple Subscription</h3>
+                        <h2 class="wow fadeInUp mt-2" data-wow-delay=".4s">7 Days of Intentionality</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Try full access risk-free for 7 days. No credit card required to begin.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Single Table -->
-                    <div class="single-table wow fadeInUp" data-wow-delay=".2s">
-                        <!-- Table Head -->
+            <div class="row justify-content-center g-4">
+                <!-- Annual Plan -->
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="single-table p-4 wow fadeInUp position-relative" data-wow-delay=".2s" style="border: 2px solid var(--accent-warm-linen) !important;">
                         <div class="table-head">
-                            <h4 class="title">Hobby</h4>
-                            <p>All the basics for starting a new business</p>
-                            <div class="price">
-                                <h2 class="amount">$12<span class="duration">/mo</span></h2>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="title text-white mb-0">Annual Plan</h4>
+                                <span class="badge-best-value">Best Value</span>
                             </div>
-                            <div class="button">
-                                <a href="javascript:void(0)" class="btn">Buy Hobby</a>
+                            <p class="text-secondary">Full year of daily gratitude entries</p>
+                            <div class="price my-3">
+                                <h2 class="amount">$29.99<span class="duration fs-6 text-secondary"> / year</span></h2>
+                                <span class="text-olive small fw-bold">7 Days Free — Save 50%</span>
+                            </div>
+                            <div class="button mt-4">
+                                <a href="javascript:void(0)" class="btn btn-linen w-100">Start 7-Day Free Trial</a>
                             </div>
                         </div>
-                        <!-- End Table Head -->
-                        <!-- Start Table Content -->
-                        <div class="table-content">
-                            <h4 class="middle-title">What's Included</h4>
-                            <!-- Table List -->
-                            <ul class="table-list">
-                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>
+                        <div class="table-content mt-4 pt-3 border-top border-secondary">
+                            <ul class="table-list list-unstyled">
+                                <li class="mb-2 text-secondary"><i class="lni lni-checkmark-circle text-linen me-2"></i> Unlimited historical journal search</li>
+                                <li class="mb-2 text-secondary"><i class="lni lni-checkmark-circle text-linen me-2"></i> Year & Month heatmap views</li>
+                                <li class="mb-2 text-secondary"><i class="lni lni-checkmark-circle text-linen me-2"></i> Encrypted Apple / Google cloud backup</li>
+                                <li class="mb-2 text-secondary"><i class="lni lni-checkmark-circle text-linen me-2"></i> No credit card required for free trial</li>
                             </ul>
-                            <!-- End Table List -->
                         </div>
-                        <!-- End Table Content -->
                     </div>
-                    <!-- End Single Table-->
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Single Table -->
-                    <div class="single-table wow fadeInUp" data-wow-delay=".4s">
-                        <!-- Table Head -->
+                <!-- Monthly Plan -->
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="single-table p-4 wow fadeInUp" data-wow-delay=".4s">
                         <div class="table-head">
-                            <h4 class="title">Freelancer</h4>
-                            <p>All the basics for starting a new business</p>
-                            <div class="price">
-                                <h2 class="amount">$24<span class="duration">/mo</span></h2>
+                            <h4 class="title text-white mb-2">Monthly Plan</h4>
+                            <p class="text-secondary">Flexible month-to-month commitment</p>
+                            <div class="price my-3">
+                                <h2 class="amount">$4.99<span class="duration fs-6 text-secondary"> / month</span></h2>
+                                <span class="text-secondary small">7 Days Free Trial</span>
                             </div>
-                            <div class="button">
-                                <a href="javascript:void(0)" class="btn">Buy Freelancer</a>
+                            <div class="button mt-4">
+                                <a href="javascript:void(0)" class="btn btn-outline-linen w-100">Start Monthly Trial</a>
                             </div>
                         </div>
-                        <!-- End Table Head -->
-                        <!-- Start Table Content -->
-                        <div class="table-content">
-                            <h4 class="middle-title">What's Included</h4>
-                            <!-- Table List -->
-                            <ul class="table-list">
-                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>
+                        <div class="table-content mt-4 pt-3 border-top border-secondary">
+                            <ul class="table-list list-unstyled">
+                                <li class="mb-2 text-secondary"><i class="lni lni-checkmark-circle text-linen me-2"></i> Unlimited historical journal search</li>
+                                <li class="mb-2 text-secondary"><i class="lni lni-checkmark-circle text-linen me-2"></i> Year & Month heatmap views</li>
+                                <li class="mb-2 text-secondary"><i class="lni lni-checkmark-circle text-linen me-2"></i> Encrypted Apple / Google cloud backup</li>
+                                <li class="mb-2 text-secondary"><i class="lni lni-checkmark-circle text-linen me-2"></i> Cancel anytime inside App Store</li>
                             </ul>
-                            <!-- End Table List -->
                         </div>
-                        <!-- End Table Content -->
                     </div>
-                    <!-- End Single Table-->
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Single Table -->
-                    <div class="single-table wow fadeInUp" data-wow-delay=".6s">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <h4 class="title">Startup</h4>
-                            <p>All the basics for starting a new business</p>
-                            <div class="price">
-                                <h2 class="amount">$32<span class="duration">/mo</span></h2>
-                            </div>
-                            <div class="button">
-                                <a href="javascript:void(0)" class="btn">Buy Startup</a>
-                            </div>
-                        </div>
-                        <!-- End Table Head -->
-                        <!-- Start Table Content -->
-                        <div class="table-content">
-                            <h4 class="middle-title">What's Included</h4>
-                            <!-- Table List -->
-                            <ul class="table-list">
-                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>
-                            </ul>
-                            <!-- End Table List -->
-                        </div>
-                        <!-- End Table Content -->
-                    </div>
-                    <!-- End Single Table-->
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Single Table -->
-                    <div class="single-table wow fadeInUp" data-wow-delay=".8s">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <h4 class="title">Enterprise</h4>
-                            <p>All the basics for starting a new business</p>
-                            <div class="price">
-                                <h2 class="amount">$48<span class="duration">/mo</span></h2>
-                            </div>
-                            <div class="button">
-                                <a href="javascript:void(0)" class="btn">Buy Enterprise</a>
-                            </div>
-                        </div>
-                        <!-- End Table Head -->
-                        <!-- Start Table Content -->
-                        <div class="table-content">
-                            <h4 class="middle-title">What's Included</h4>
-                            <!-- Table List -->
-                            <ul class="table-list">
-                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>
-                            </ul>
-                            <!-- End Table List -->
-                        </div>
-                        <!-- End Table Content -->
-                    </div>
-                    <!-- End Single Table-->
                 </div>
             </div>
         </div>
     </section>
-    <!--/ End Pricing Table Area -->
+    <!-- End Pricing Table Area -->
 
     <!-- Start Call To Action Area -->
-    <section class="section call-action">
+    <section class="section call-action py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-                    <div class="cta-content">
-                        <h2 class="wow fadeInUp" data-wow-delay=".2s">You are using free Lite <br>Version of Appvilla
-                        </h2>
-                        <p class="wow fadeInUp" data-wow-delay=".4s">Please, purchase full version of the template to
-                            get all pages, features and commercial license.</p>
-                        <div class="button wow fadeInUp" data-wow-delay=".6s">
-                            <a href="javascript:void(0)" class="btn">Purchase Now</a>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="cta-content p-5">
+                        <h2 class="text-white wow fadeInUp" data-wow-delay=".2s">Build a Mindful Habit That Lasts</h2>
+                        <p class="text-secondary mt-3 wow fadeInUp" data-wow-delay=".4s">
+                            Join thousands capturing life’s small wins in 150 characters every evening.
+                        </p>
+                        <div class="button mt-4 wow fadeInUp" data-wow-delay=".6s">
+                            <a href="#pricing" class="btn btn-linen">Download on App Store</a>
                         </div>
                     </div>
                 </div>
@@ -415,102 +403,26 @@
     <!-- End Call To Action Area -->
 
     <!-- Start Footer Area -->
-    <footer class="footer">
-        <!-- Start Footer Top -->
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <!-- Single Widget -->
-                        <div class="single-footer f-about">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logo/white-logo.svg" alt="#">
-                                </a>
-                            </div>
-                            <p>Making the world a better place through constructing elegant hierarchies.</p>
-                            <ul class="social">
-                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-pinterest"></i></a></li>
-                            </ul>
-                            <p class="copyright-text">Designed and Developed by <a href="https://uideck.com/"
-                                    rel="nofollow" target="_blank">UIdeck</a>
-                            </p>
-                        </div>
-                        <!-- End Single Widget -->
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-12">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <!-- Single Widget -->
-                                <div class="single-footer f-link">
-                                    <h3>Solutions</h3>
-                                    <ul>
-                                        <li><a href="javascript:void(0)">Marketing</a></li>
-                                        <li><a href="javascript:void(0)">Analytics</a></li>
-                                        <li><a href="javascript:void(0)">Commerce</a></li>
-                                        <li><a href="javascript:void(0)">Insights</a></li>
-                                        <li><a href="javascript:void(0)">Promotion</a></li>
-                                    </ul>
-                                </div>
-                                <!-- End Single Widget -->
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <!-- Single Widget -->
-                                <div class="single-footer f-link">
-                                    <h3>Support</h3>
-                                    <ul>
-                                        <li><a href="javascript:void(0)">Pricing</a></li>
-                                        <li><a href="javascript:void(0)">Documentation</a></li>
-                                        <li><a href="javascript:void(0)">Guides</a></li>
-                                        <li><a href="javascript:void(0)">API Status</a></li>
-                                        <li><a href="javascript:void(0)">Live Support</a></li>
-                                    </ul>
-                                </div>
-                                <!-- End Single Widget -->
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <!-- Single Widget -->
-                                <div class="single-footer f-link">
-                                    <h3>Company</h3>
-                                    <ul>
-                                        <li><a href="javascript:void(0)">About Us</a></li>
-                                        <li><a href="javascript:void(0)">Our Blog</a></li>
-                                        <li><a href="javascript:void(0)">Jobs</a></li>
-                                        <li><a href="javascript:void(0)">Press</a></li>
-                                        <li><a href="javascript:void(0)">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                                <!-- End Single Widget -->
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <!-- Single Widget -->
-                                <div class="single-footer f-link">
-                                    <h3>Legal</h3>
-                                    <ul>
-                                        <li><a href="javascript:void(0)">Terms & Conditions</a></li>
-                                        <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                                        <li><a href="javascript:void(0)">Catering Services</a></li>
-                                        <li><a href="javascript:void(0)">Customer Relations</a></li>
-                                        <li><a href="javascript:void(0)">Innovation</a></li>
-                                    </ul>
-                                </div>
-                                <!-- End Single Widget -->
-                            </div>
-                        </div>
+    <footer class="footer pt-5 pb-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h5 class="text-linen mb-2">Gratitude Journal</h5>
+                    <p class="text-secondary small mb-0">Transforming mental well-being through strict, deliberate minimalism.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <p class="text-secondary small mb-0">&copy; 2026 Gratitude Journal. All Rights Reserved.</p>
+                    <div class="mt-2">
+                        <a href="javascript:void(0)" class="text-secondary small me-3">Terms of Use (EULA)</a>
+                        <a href="javascript:void(0)" class="text-secondary small">Privacy Policy</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--/ End Footer Top -->
     </footer>
-    <!--/ End Footer Area -->
+    <!-- End Footer Area -->
 
-    <!-- ========================= scroll-top ========================= -->
+    <!-- Scroll Top Button -->
     <a href="#" class="scroll-top">
         <i class="lni lni-chevron-up"></i>
     </a>
@@ -520,19 +432,16 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/tiny-slider.js"></script>
     <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script type="text/javascript">
+    <script>
+        window.onload = function () {
+            window.setTimeout(fadeout, 500);
+        }
 
-        //====== counter up 
-        var cu = new counterUp({
-            start: 0,
-            duration: 2000,
-            intvalues: true,
-            interval: 100,
-            append: " ",
-        });
-        cu.start();
+        function fadeout() {
+            document.querySelector('.preloader').style.opacity = '0';
+            document.querySelector('.preloader').style.display = 'none';
+        }
     </script>
 </body>
 
